@@ -178,6 +178,29 @@
   background: #d6b77a;
   color: #25151a;
 }
+/* Mobile-friendly contact links */
+@media screen and (max-width: 600px) {
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .social-link,
+  .text-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    cursor: pointer;
+    touch-action: manipulation;
+    text-decoration: none;
+  }
+
+  .social-link {
+    padding: 10px 14px;
+  }
+}
 /* Fix social links on Android mobile phones */
 @media screen and (max-width: 600px) {
   .social-links {
